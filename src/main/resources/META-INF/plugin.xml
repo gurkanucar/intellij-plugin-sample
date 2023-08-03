@@ -43,5 +43,10 @@
             <add-to-group group-id="CutCopyPasteGroup"/>
             <add-to-group group-id="EditorPopupMenu"/>
         </action>
+        <action class="com.example.demoplugin.action.nestedActions.NestedSubActionGroup" id="NestedMyActionGroup">
+            <add-to-group group-id="CutCopyPasteGroup"/>
+            <add-to-group group-id="EditorPopupMenu"/>
+        </action>
+        
     </actions>
 </idea-plugin>
