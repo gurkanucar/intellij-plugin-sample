@@ -27,5 +27,17 @@
     <extensions defaultExtensionNs="com.intellij">
     </extensions>
 
-
+    <actions>
+        <action class="com.example.demoplugin.action.HelloWorldAction" id="MyAction">
+            <add-to-group group-id="CutCopyPasteGroup"/>
+            <add-to-group group-id="EditorPopupMenu"/>
+            <!--            <add-to-group group-id="StructureViewPopupMenu"/>-->
+            <!--            <add-to-group group-id="MainMenu"/>-->
+            <!--            <add-to-group group-id="PopupMenuActions"/>-->
+            <!--            <add-to-group group-id="CodeEditorViewGroup"/>-->
+            <!--            <add-to-group group-id="EditorContextBarMenu"/>-->
+            <!--            <add-to-group group-id="CodeMenu"-->
+            />
+        </action>
+    </actions>
 </idea-plugin>
