@@ -39,5 +39,9 @@
             <!--            <add-to-group group-id="CodeMenu"-->
             />
         </action>
+        <action class="com.example.demoplugin.action.HelloWorldActionGroup" id="MyActionGroup">
+            <add-to-group group-id="CutCopyPasteGroup"/>
+            <add-to-group group-id="EditorPopupMenu"/>
+        </action>
     </actions>
 </idea-plugin>
