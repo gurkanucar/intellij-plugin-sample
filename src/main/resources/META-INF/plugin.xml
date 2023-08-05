@@ -54,5 +54,9 @@
             <add-to-group group-id="CutCopyPasteGroup"/>
             <add-to-group group-id="EditorPopupMenu"/>
         </action>
+        <action class="com.example.demoplugin.action.DetectClickedPath" id="DetectClickedPath">
+            <add-to-group group-id="CutCopyPasteGroup"/>
+            <add-to-group group-id="EditorPopupMenu"/>
+        </action>
     </actions>
 </idea-plugin>
