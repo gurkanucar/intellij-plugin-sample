@@ -30,6 +30,11 @@
             <!--            <add-to-group group-id="EditorContextBarMenu"/>-->
             <!--            <add-to-group group-id="CodeMenu"-->
             />
+
+        </action>
+        <action class="com.example.demoplugin.action.GetterSetterTestGenerator" id="GetterSetterTestGenerator">
+            <add-to-group group-id="CutCopyPasteGroup"/>
+            <add-to-group group-id="EditorPopupMenu"/>
         </action>
         <action class="com.example.demoplugin.action.CreateFields" id="CreateFields">
             <add-to-group group-id="CutCopyPasteGroup"/>
