@@ -13,6 +13,7 @@
   ]]></description>
 
     <depends>com.intellij.modules.platform</depends>
+    <depends>com.intellij.modules.java</depends>
 
     <extensions defaultExtensionNs="com.intellij">
         <postStartupActivity implementation="com.example.demoplugin.MyStartupActivity"/>
@@ -50,5 +51,15 @@
             <add-to-group group-id="CutCopyPasteGroup"/>
             <add-to-group group-id="EditorPopupMenu"/>
         </action>
+        <action id="ExportTemplatesAction" class="com.example.demoplugin.action.ExportTemplatesAction"
+                text="Export Templates">
+            <add-to-group group-id="CutCopyPasteGroup"/>
+            <add-to-group group-id="EditorPopupMenu"/>
+        </action>
     </actions>
+
+    <actions>
+    </actions>
+
+
 </idea-plugin>
