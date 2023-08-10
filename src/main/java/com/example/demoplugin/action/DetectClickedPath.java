@@ -3,6 +3,7 @@ package com.example.demoplugin.action;
 import com.intellij.openapi.actionSystem.*;
 import com.intellij.openapi.actionSystem.AnAction;
 import com.intellij.openapi.actionSystem.AnActionEvent;
+import com.intellij.openapi.ui.Messages;
 import com.intellij.openapi.vfs.VirtualFile;
 
 public class DetectClickedPath extends AnAction {
@@ -20,5 +21,6 @@ public class DetectClickedPath extends AnAction {
     }
     String packagePath = virtualFile.getPath();
     System.out.println("Clicked package folder path: " + packagePath);
+    Messages.showInfoMessage("Clicked package folder path: " + packagePath, "Info");
   }
 }
