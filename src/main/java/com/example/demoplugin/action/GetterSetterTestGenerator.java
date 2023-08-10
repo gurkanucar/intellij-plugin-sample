@@ -105,7 +105,7 @@ public class GetterSetterTestGenerator extends AnAction {
     } else if (PsiType.getTypeByName(
             "java.time.LocalDate", psiJavaFile.getProject(), psiJavaFile.getResolveScope())
         .equals(fieldType)) {
-      return "java.time.LocalDate.now()";
+      return "date";
     } else {
       return "null";
     }
