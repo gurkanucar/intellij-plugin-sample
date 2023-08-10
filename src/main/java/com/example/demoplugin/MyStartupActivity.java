@@ -12,9 +12,9 @@ import org.jetbrains.annotations.NotNull;
 public class MyStartupActivity implements StartupActivity {
   @Override
   public void runActivity(@NotNull Project project) {
-    System.out.println("IntelliJ IDEA plugin is opening.");
-    String filePath = "D:\\test.txt";
-    readAndPrintFile(filePath);
+    // System.out.println("IntelliJ IDEA plugin is opening.");
+    // String filePath = "D:\\test.txt";
+    // readAndPrintFile(filePath);
   }
 
   private static void readAndPrintFile(String filePath) {
