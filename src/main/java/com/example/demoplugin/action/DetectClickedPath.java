@@ -15,10 +15,10 @@ public class DetectClickedPath extends AnAction {
   @Override
   public void actionPerformed(AnActionEvent e) {
     VirtualFile virtualFile = e.getDataContext().getData(CommonDataKeys.VIRTUAL_FILE);
-    if (virtualFile == null || !virtualFile.isDirectory()) {
-      System.out.println("err");
-      return;
-    }
+    //    if (virtualFile == null || !virtualFile.isDirectory()) {
+    //      System.out.println("err");
+    //      return;
+    //    }
     String packagePath = virtualFile.getPath();
     System.out.println("Clicked package folder path: " + packagePath);
     Messages.showInfoMessage("Clicked package folder path: " + packagePath, "Info");
