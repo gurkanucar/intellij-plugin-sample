@@ -29,46 +29,37 @@ public class GetterSetterTestGenerator extends AnAction {
     PsiField[] fields = mainClass.getFields();
 
     StringBuilder testClassContent = new StringBuilder();
-    testClassContent.append("import org.junit.jupiter.api.Test;\n");
-    testClassContent.append("import java.time.LocalDate;\n");
-    testClassContent.append("import static org.junit.jupiter.api.Assertions.assertEquals;\n");
-    testClassContent.append("\n");
-    testClassContent.append("class ").append(mainClass.getName()).append("Test {\n");
-    testClassContent.append("\n");
-    testClassContent.append("    @Test\n");
-    testClassContent.append("    void getterSetterTest() {\n");
-    testClassContent.append("        LocalDate date = LocalDate.now();\n");
-    testClassContent
-        .append("        ")
-        .append(mainClass.getName())
-        .append(" obj = new ")
-        .append(mainClass.getName())
-        .append("();\n");
+
+    testClassContent.append(
+        """
+        import org.junit.jupiter.api.Test;
+        import java.time.LocalDate;
+        import static org.junit.jupiter.api.Assertions.assertEquals;
+
+        class %sTest {
+
+            @Test
+            void getterSetterTest() {
+                LocalDate date = LocalDate.now();
+                %s obj = new %s();
+        """
+            .formatted(mainClass.getName(), mainClass.getName(), mainClass.getName()));
 
     for (PsiField field : fields) {
       String fieldName = field.getName();
       String capitalizedFieldName =
           fieldName.substring(0, 1).toUpperCase() + fieldName.substring(1);
-
-      // Generate example values based on field type
       String exampleValue = generateExampleValue(field.getType(), psiJavaFile);
 
-      testClassContent
-          .append("        obj.set")
-          .append(capitalizedFieldName)
-          .append("(")
-          .append(exampleValue)
-          .append(");\n");
-      testClassContent
-          .append("        assertEquals(")
-          .append(exampleValue)
-          .append(", obj.get")
-          .append(capitalizedFieldName)
-          .append("());\n");
+      testClassContent.append(
+          """
+                obj.set%s(%s);
+                assertEquals(%s, obj.get%s());
+        """
+              .formatted(capitalizedFieldName, exampleValue, exampleValue, capitalizedFieldName));
     }
 
-    testClassContent.append("    }\n");
-    testClassContent.append("}\n");
+    testClassContent.append("    }\n").append("}\n");
 
     WriteCommandAction.runWriteCommandAction(
         psiFile.getProject(),
