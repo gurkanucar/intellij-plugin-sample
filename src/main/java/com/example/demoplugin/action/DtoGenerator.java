@@ -35,6 +35,9 @@ public class DtoGenerator extends AnAction {
 
         import lombok.Getter;
         import lombok.Setter;
+        import java.math.BigDecimal;
+        import java.util.List;
+
 
         @Getter
         @Setter
@@ -53,7 +56,7 @@ public class DtoGenerator extends AnAction {
         """.formatted(type, fieldName));
     }
 
-    testClassContent.append("    }\n").append("}\n");
+    testClassContent.append("}\n");
 
     WriteCommandAction.runWriteCommandAction(
         psiFile.getProject(),
