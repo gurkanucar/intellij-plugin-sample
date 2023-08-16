@@ -20,18 +20,17 @@
     </extensions>
 
     <actions>
-        <action class="com.example.demoplugin.action.HelloWorldAction" id="MyAction">
-            <add-to-group group-id="CutCopyPasteGroup"/>
-            <add-to-group group-id="EditorPopupMenu"/>
-            <!--            <add-to-group group-id="StructureViewPopupMenu"/>-->
-            <!--            <add-to-group group-id="MainMenu"/>-->
-            <!--            <add-to-group group-id="PopupMenuActions"/>-->
-            <!--            <add-to-group group-id="CodeEditorViewGroup"/>-->
-            <!--            <add-to-group group-id="EditorContextBarMenu"/>-->
-            <!--            <add-to-group group-id="CodeMenu"-->
-            />
-
-        </action>
+<!--        <action class="com.example.demoplugin.action.HelloWorldAction" id="MyAction">-->
+        <!--            <add-to-group group-id="CutCopyPasteGroup"/>-->
+        <!--            <add-to-group group-id="EditorPopupMenu"/>-->
+        <!--                        <add-to-group group-id="StructureViewPopupMenu"/>-->
+        <!--                        <add-to-group group-id="MainMenu"/>-->
+        <!--                        <add-to-group group-id="PopupMenuActions"/>-->
+        <!--                        <add-to-group group-id="CodeEditorViewGroup"/>-->
+        <!--                        <add-to-group group-id="EditorContextBarMenu"/>-->
+        <!--                        <add-to-group group-id="CodeMenu"-->
+        <!--            />-->
+        <!--        </action>-->
         <action class="com.example.demoplugin.action.GetterSetterTestGenerator" id="GetterSetterTestGenerator">
             <add-to-group group-id="CutCopyPasteGroup"/>
             <add-to-group group-id="EditorPopupMenu"/>
@@ -40,35 +39,35 @@
             <add-to-group group-id="CutCopyPasteGroup"/>
             <add-to-group group-id="EditorPopupMenu"/>
         </action>
-        <action class="com.example.demoplugin.action.CreateFields" id="CreateFields">
-            <add-to-group group-id="CutCopyPasteGroup"/>
-            <add-to-group group-id="EditorPopupMenu"/>
-        </action>
-        <action class="com.example.demoplugin.action.HelloWorldActionGroup" id="MyActionGroup">
-            <add-to-group group-id="CutCopyPasteGroup"/>
-            <add-to-group group-id="EditorPopupMenu"/>
-        </action>
+<!--        <action class="com.example.demoplugin.action.CreateFields" id="CreateFields">-->
+<!--            <add-to-group group-id="CutCopyPasteGroup"/>-->
+<!--            <add-to-group group-id="EditorPopupMenu"/>-->
+<!--        </action>-->
+<!--        <action class="com.example.demoplugin.action.HelloWorldActionGroup" id="MyActionGroup">-->
+<!--            <add-to-group group-id="CutCopyPasteGroup"/>-->
+<!--            <add-to-group group-id="EditorPopupMenu"/>-->
+<!--        </action>-->
         <action class="com.example.demoplugin.action.nestedActions.NestedSubActionGroup" id="NestedMyActionGroup">
             <add-to-group group-id="CutCopyPasteGroup"/>
             <add-to-group group-id="EditorPopupMenu"/>
         </action>
-        <action class="com.example.demoplugin.action.nestedActions.NestedSubActionGroup2" id="NestedMyActionGroup2">
-            <add-to-group group-id="CutCopyPasteGroup"/>
-            <add-to-group group-id="EditorPopupMenu"/>
-        </action>
+<!--        <action class="com.example.demoplugin.action.nestedActions.NestedSubActionGroup2" id="NestedMyActionGroup2">-->
+<!--            <add-to-group group-id="CutCopyPasteGroup"/>-->
+<!--            <add-to-group group-id="EditorPopupMenu"/>-->
+<!--        </action>-->
         <action class="com.example.demoplugin.action.DetectClickedPath" id="DetectClickedPath">
             <add-to-group group-id="CutCopyPasteGroup"/>
             <add-to-group group-id="EditorPopupMenu"/>
         </action>
-        <action class="com.example.demoplugin.action.DialogPanelViewer" id="DialogPanelViewer">
-            <add-to-group group-id="CutCopyPasteGroup"/>
-            <add-to-group group-id="EditorPopupMenu"/>
-        </action>
-        <action id="ExportTemplatesAction" class="com.example.demoplugin.action.ExportTemplatesAction"
-                text="Export Templates">
-            <add-to-group group-id="CutCopyPasteGroup"/>
-            <add-to-group group-id="EditorPopupMenu"/>
-        </action>
+<!--        <action class="com.example.demoplugin.action.DialogPanelViewer" id="DialogPanelViewer">-->
+<!--            <add-to-group group-id="CutCopyPasteGroup"/>-->
+<!--            <add-to-group group-id="EditorPopupMenu"/>-->
+<!--        </action>-->
+<!--        <action id="ExportTemplatesAction" class="com.example.demoplugin.action.ExportTemplatesAction"-->
+<!--                text="Export Templates">-->
+<!--            <add-to-group group-id="CutCopyPasteGroup"/>-->
+<!--            <add-to-group group-id="EditorPopupMenu"/>-->
+<!--        </action>-->
     </actions>
 
     <actions>
