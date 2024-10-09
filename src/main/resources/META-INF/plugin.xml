@@ -35,10 +35,10 @@
             <add-to-group group-id="CutCopyPasteGroup"/>
             <add-to-group group-id="EditorPopupMenu"/>
         </action>
-        <action class="com.example.demoplugin.action.DtoGenerator" id="DtoGenerator">
-            <add-to-group group-id="CutCopyPasteGroup"/>
-            <add-to-group group-id="EditorPopupMenu"/>
-        </action>
+<!--        <action class="com.example.demoplugin.action.DtoGenerator" id="DtoGenerator">-->
+<!--            <add-to-group group-id="CutCopyPasteGroup"/>-->
+<!--            <add-to-group group-id="EditorPopupMenu"/>-->
+<!--        </action>-->
 <!--        <action class="com.example.demoplugin.action.CreateFields" id="CreateFields">-->
 <!--            <add-to-group group-id="CutCopyPasteGroup"/>-->
 <!--            <add-to-group group-id="EditorPopupMenu"/>-->
